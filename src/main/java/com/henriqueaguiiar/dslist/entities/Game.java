@@ -1,10 +1,17 @@
 package com.henriqueaguiiar.dslist.entities;
 
+import jakarta.persistence.*;
+
 import java.util.Objects;
 
+@Entity
+@Table(name = "tb_game")
 public class Game {
-    private long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String title;
+    @Column(name = "tb_game")
     private Integer year;
     private String genre;
     private String platforms;
@@ -101,6 +108,12 @@ public class Game {
         this.longDescription = longDescription;
     }
 
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(id);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -109,8 +122,4 @@ public class Game {
         return id == game.id;
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hashCode(id);
-    }
 }

@@ -44,10 +44,5 @@ public class GameListController {
         gameListService.move(listId, body.getSourceIndex(), body.getDestinationIndex());
     }
 
-    @GetMapping
-    public List<Produto> buscar(@RequestParam("nome")String nome){
-        return produtoRepository.findByNome(nome);
-    }
-}
 
 }

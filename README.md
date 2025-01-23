@@ -1,10 +1,10 @@
-# DS List Backend Projeto para estudos construido na Semana Intensiva Java Spring do Nelio Alves
+# Projeto DSList - Intensivão Java Spring
 
 # Sobre o projeto
 
 
-## Modelo conceitual
-![Modelo Conceitual](https://github.com/acenelio/assets/raw/main/sds1/modelo-conceitual.png)
+## Modelo de domínio DSList
+![Modelo de Domínio](https://raw.githubusercontent.com/devsuperior/java-spring-dslist/main/resources/dslist-model.png)
 
 # Tecnologias utilizadas
 ## Back end
@@ -12,25 +12,17 @@
 - Spring Boot
 - JPA / Hibernate
 - Maven
+- Postgresql
+- H2
+- Docker compose
 
 ## Implantação em produção
-
-
-# Como executar o projeto
+Back end: Raiway
+Banco de dados: Postgresql
 
 ## Back end
-Pré-requisitos: Java 11
+Pré-requisitos: Java 17
 
-```bash
-# clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
-
-# entrar na pasta do projeto back end
-cd backend
-
-# executar o projeto
-./mvnw spring-boot:run
-```
 
 # Autor
 

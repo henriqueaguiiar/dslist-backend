@@ -1,7 +1,3 @@
-Claro! Abaixo está uma versão complementada do seu README, incorporando mais detalhes e informações úteis para quem for utilizar ou contribuir para o projeto.
-
----
-
 # Projeto DSList - Intensivo Java Spring
 
 ## Sobre o projeto
